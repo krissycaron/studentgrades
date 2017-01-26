@@ -27,13 +27,25 @@ for (var i=0; i<scores.length; i++) {
 
 }
 
-console.log ("scores", scores);
+console.log ("there are ", gradeA, " a's in this class.");
+console.log ("there are ", gradeB, " b's in this class.");
+console.log ("there are ", gradeC, " c's in this class.");
+console.log ("there are ", gradeD, " d's in this class.");
+console.log ("there are ", gradeF, " f's in this class.");
+
+var lowestNum = scores.sort(
+	function(a,b){
+		return a-b
+} )
+
+console.log("lowest score", lowestNum[0]);
+
+console.log("highest score", lowestNum[11]);
 
 
-// var test = 78
 
-// if (test< 101 && test>89) {
-// 	document.write="GradeA"
-// } else if ()
+
+
+
 
 
